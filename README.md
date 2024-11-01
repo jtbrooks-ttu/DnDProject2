@@ -1,1 +1,3 @@
 # DnDProject2
+Authors: J.T. Brooks, Carson Alfaro, Max Beaty
+This program utilizes a circular, doubly linked list to present a DnD style character selection screen to the user. It allows the user to add & delete characters, sort the list in ascending and descending order, and iterate throught the list in either direction. There are 2 classes: Linked List and Character. Character is our "Data Class". We also utilize a List Node structure outside of the Linked List class.

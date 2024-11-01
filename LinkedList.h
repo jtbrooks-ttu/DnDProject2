@@ -1,9 +1,9 @@
-
 /*
-	Title:	 LinkedList.h
-	Date:	 2-8-2019
-	Author:	 J.T. Brooks, Carson Alfaro
-	Purpose: Doubly linked list for circular character display.
+	Title:   LinkedList.h
+	Author:  J.T. Brooks, Carson Alfaro, Max Beaty
+	Date:    10/14/24
+	Purpose: Header file containing function definitions and template class
+	Linked List.
 */
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
@@ -16,46 +16,49 @@ template <typename T>
 class LinkedList
 {
 private:
+
 	ListNode<T> *head; 
 	ListNode<T> *tail;
+
 public:
 	
-	// Constructor
-	LinkedList()
+	LinkedList() // constructor
 	{
 		head = NULL;
 		tail = NULL;
 	}
 
-	// Destructor (similar to a typical RemoveAll function)
-	~LinkedList();
+	~LinkedList(); // destructor
 
-	// Linked list operations
 	bool isEmpty();
-	int getLength();
-	void mergeSort(int);
-	// void merge(int*, int, int, int);
-	T getNodeValue(int);
+	ListNode<T>* split(ListNode<T>*);
+	ListNode<T>* merge(ListNode<T>*, ListNode<T>*, const int sortDirection);
+	ListNode<T>* MergeSort(ListNode<T>*, const int sortDirection);
+	T getNode(int);
 	int appendNode(T);
-	void insertNode(int, T);
 	void deleteNode(ListNode<T>*);
 	ListNode<T>* begin();
 	ListNode<T>* end();
+	void setEnd(ListNode<T>*);
+	void setHead(ListNode<T>*);
 	friend ostream& operator<<(ostream& os, LinkedList<T>& list) { 
 		
 		ListNode<T> *nodePtr;
+		nodePtr = list.end();
+		nodePtr->next = NULL;
 		nodePtr = list.begin();
-
-		while (nodePtr)
-		{
+		
+		while(nodePtr){ // iterates through list and prints Character
 			os << nodePtr->value << endl;
 			nodePtr = nodePtr->next;
 		}
+		nodePtr = list.end();
+		nodePtr->next = list.begin();
     	
 		return os;
 	}
 };
 
-#include "LinkedList.tpp"
+#include "LinkedList.tpp" // LinkedList template file
 
 #endif

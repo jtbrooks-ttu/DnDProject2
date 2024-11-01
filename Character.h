@@ -1,15 +1,22 @@
+/*
+	Title:   Character.h
+	Author:  J.T. Brooks, Carson Alfaro, Max Beaty
+	Date:    10/14/24
+	Purpose: Data class. Contains members name, class, and race for user to input.
+*/
 #ifndef CHARACTER_HPP
 #define CHARACTER_HPP
 #include <iostream>
 
 using namespace std;
 
-class Character{
+class Character{ //Data class
 private:
     string name;
     string charClass;
     string race;
 public:
+    //getter and setter functions
     string getName(){
         return name;
     }
@@ -28,6 +35,7 @@ public:
     void setRace(string race){
         this->race = race;
     }
+    //overloaded output operators
     friend ostream& operator<<(ostream& os, Character& characterList) { 
     os << "Character: " << characterList.name << endl;
     os << "Class: "  << characterList.charClass << endl;
@@ -43,12 +51,31 @@ public:
     getline(is, characterList.race);
     return is;
     }
+    bool operator>(const Character& otherChar) { // compares by Character name
+        int num;
+        num = this->name.compare(otherChar.name);
+        return (num > 0);
+    }
+    bool operator<(const Character& otherChar) { // compares by Character name
+        int num;
+        num = this->name.compare(otherChar.name);
+        return (num < 0);
+    }
+    bool operator==(const Character& otherChar){ // compares by Character name
+        return(!(this->name.compare(otherChar.name)));
+    }
     
 };
 
 void printMenu();
 int validateInt(int, int, int);
 void loadCharacters(string, LinkedList<Character> *);
+/*
+    Title: printMenu
+    Author: J.T. Brooks
+    Date: 11/01/24
+    Purpose: Prints menu to screen
+*/
 void printMenu()
 {
     cout << "1. Next Character" << endl;
@@ -64,7 +91,7 @@ void printMenu()
     Date: 9/26/24
     Purpose: Validate user inputted intigers
 */
-int validateInt(int choice, int low, int high)
+int validateInt(int choice, int low, int high) //validates user inputted inetgers
 {
     while (!(cin >> choice) || (choice < low || choice > high))
     { // if cin fails, the data type was incorrect, otherwise, the # was out of range
@@ -76,28 +103,5 @@ int validateInt(int choice, int low, int high)
             cout << "Incorrect data type. Try again: ";
     }
     return choice;
-}
-/*
-    Title: loadCharacters
-    Author: J.T. Brooks
-    Date: 10/7/24
-    Purpose: Load list of Characters through file input
-*/
-void loadCharacters(string fileName, LinkedList<Character> *list)
-{
-    ifstream infile;
-    infile.open(fileName);
-    string str;
-    Character *ptr;
-    while (getline(infile, str, '#'))
-    {
-        ptr = new Character;
-        ptr->setName(str);
-        getline(infile, str, '#');
-        ptr->setClass(str);
-        getline(infile, str, '#');
-        ptr->setRace(str);
-        list->appendNode(*ptr);
-    }
 }
 #endif

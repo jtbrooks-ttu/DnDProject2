@@ -1,3 +1,9 @@
+/*
+	Title:   ListNode.h
+	Author:  J.T. Brooks, Carson Alfaro, Max Beaty
+	Date:    10/14/24
+	Purpose: List Node structure used to traverse Linked List.
+*/
 #ifndef LISTNODE_HPP
 #define LISTNODE_HPP
 #include<iostream>
@@ -8,9 +14,9 @@ using namespace std;
 template <typename T>
 struct ListNode
 {
-    T value;              // The value in this node
-    ListNode *next;     // To point to the next node
-    ListNode *previous; // To point to the previous node
+    T value;            // held value
+    ListNode *next;     // pointer to next node
+    ListNode *previous; // pointer to previous node
 };
 
 #endif
