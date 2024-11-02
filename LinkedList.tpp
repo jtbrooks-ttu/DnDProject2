@@ -41,9 +41,9 @@ T LinkedList<T>::getNode(int pos)
 		nodePtr = head;
 		int currentPos = 0;
 
-		while (nodePtr != NULL && position >= currentPos) // searches for node
+		while (nodePtr != NULL && pos >= currentPos) // searches for node
 		{
-			if (position == currentPos)
+			if (pos == currentPos)
 				return nodePtr->value;
 			currentPos++;
 			nodePtr = nodePtr->next;
