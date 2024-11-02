@@ -1,0 +1,283 @@
+Author: Max Beaty
+Purpose: Test Case Output 
+Date: 11/1/24
+********************************************************************************
+                WELCOME TO DND CHARACTER SELECTION
+********************************************************************************
+
+No characters found...
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 3
+
+Character: james
+Class: Bard
+Race: orc
+
+******CURRENT CHARACTER******
+
+Character: james
+Class: Bard
+Race: orc
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 3
+
+
+Character: thirston rouffus
+Class: mage
+Race: dwarf
+
+******CURRENT CHARACTER******
+
+Character: thirston rouffus
+Class: mage
+Race: dwarf
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 2
+
+******CURRENT CHARACTER******
+
+Character: james
+Class: Bard
+Race: orc
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 3
+
+Character: Phil Earlson           
+Class: barbarian
+Race: dark elf
+
+******CURRENT CHARACTER******
+
+Character: thirston rouffus
+Class: mage
+Race: dwarf
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 1
+
+******CURRENT CHARACTER******
+
+Character: Phil Earlson
+Class: barbarian
+Race: dark elf
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 3
+
+
+Character: fernado
+Class: cleric
+Race: human
+
+******CURRENT CHARACTER******
+
+Character: fernado
+Class: cleric
+Race: human
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 5
+
+Choose sort direction: 
+       1. Ascending
+       2. Decending
+1
+
+******FULL CHARACTER LIST******
+
+Character: Phil Earlson
+Class: barbarian
+Race: dark elf
+
+Character: fernado
+Class: cleric
+Race: human
+
+Character: james
+Class: Bard
+Race: orc
+Character: thirston rouffus
+Class: mage
+Race: dwarf
+
+
+******CURRENT CHARACTER******
+
+Character: fernado
+Class: cleric
+Race: human
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 4
+
+******CURRENT CHARACTER******
+
+Character: Phil Earlson
+Class: barbarian
+Race: dark elf
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 5
+
+Choose sort direction: 
+       1. Ascending
+       2. Decending
+2
+
+******FULL CHARACTER LIST******
+
+Character: thirston rouffus
+Class: mage
+Race: dwarf
+
+Character: james
+Class: Bard
+Race: orc
+Character: Phil Earlson
+Class: barbarian
+Race: dark elf
+
+
+******CURRENT CHARACTER******
+
+Character: Phil Earlson
+Class: barbarian
+Race: dark elf
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 3
+
+
+Character: Robert Plant
+Class: singer
+Race: human
+
+******CURRENT CHARACTER******
+
+Character: Robert Plant
+Class: singer
+Race: human
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 5
+
+Choose sort direction: 
+       1. Ascending
+       2. Decending
+1
+
+******FULL CHARACTER LIST******
+
+Character: Phil Earlson
+Class: barbarian
+Race: dark elf
+
+Character: Robert Plant
+Class: singer
+Race: human
+
+Character: james
+Class: Bard
+Race: orc
+Character: thirston rouffus
+Class: mage
+Race: dwarf
+
+
+******CURRENT CHARACTER******
+
+Character: Robert Plant
+Class: singer
+Race: human
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 1
+
+******CURRENT CHARACTER******
+
+Character: james
+Class: Bard
+Race: orc
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 2
+
+******CURRENT CHARACTER******
+
+Character: Robert Plant
+Class: singer
+Race: human
+
+1. Next Character
+2. Previous Character
+3. Add Character
+4. Delete Current Character
+5. Display full list
+6. Exit Program
+Choice: 6
